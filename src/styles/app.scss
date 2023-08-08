@@ -1,0 +1,99 @@
+.app {
+	min-height: $app-height;
+  padding: 20px;
+  background-color: #f0f0f0;
+
+  .content-app {
+    max-width: 400px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+			margin-bottom: 20px;
+      gap: 10px;
+
+      input[type="text"] {
+        flex: 1;
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      button[type="submit"],
+      button#delete-all-todos {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #2980b9;
+        }
+      }
+    }
+
+    .todo-item {
+			max-width: 400px;
+      display: flex;
+      align-items: center;
+			justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+			gap: 20px;
+
+			.todoTitle {
+				max-width: 180px;
+				word-wrap: break-word;
+			}
+
+			.checkBoxWrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+			}
+
+      label {
+        display: flex;
+				width: max-content;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+
+        input[type="checkbox"] {
+          margin: 0;
+        }
+      }
+
+      button {
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #c0392b;
+        }
+      }
+    }
+
+		#todo-list-container {
+			list-style: none;
+		}
+  }
+}
+

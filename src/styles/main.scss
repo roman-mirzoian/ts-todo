@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+@import "./header.scss";
+@import "./nav.scss";
+@import "./container.scss";
+@import "./app.scss";
+@import "./footer.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+}
+
+body, ul {
+	margin: 0;
+	padding: 0;
+}

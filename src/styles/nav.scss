@@ -1,0 +1,33 @@
+.nav {
+	&__list {
+		list-style: none;
+		display: flex;
+
+		&-header {
+			flex-direction: row;
+
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+
+		&-footer {
+			flex-direction: column;
+		}
+
+		.nav__link {
+			padding: 10px 0;
+
+			&-item {
+				padding: 0 15px;
+				text-decoration: none;
+				color: #111;
+				transition: color 0.4s ease 0s, opacity 0.4s ease 0s, transform 0.4s ease 0s;
+
+				&:hover {
+					color: #FE803C;
+				}
+			}
+		}
+	}
+}
