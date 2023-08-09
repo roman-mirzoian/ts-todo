@@ -56,6 +56,10 @@
 			.todoTitle {
 				max-width: 180px;
 				word-wrap: break-word;
+
+				@media (max-width: 991px) {
+					max-width: 150px;
+				}
 			}
 
 			.checkBoxWrapper {
@@ -89,6 +93,10 @@
           background-color: #c0392b;
         }
       }
+
+			@media (max-width: 991px) {
+				max-width: 365px;
+			}
     }
 
 		#todo-list-container {
